@@ -1,0 +1,12 @@
+<nav class="nav " role="navigation">
+    <ul class="">
+      <% if user_signed_in? %>
+        <span><%= link_to('Reports', user_reports_path(current_user)) %></span>
+        <span><%= link_to('Create New Report', new_user_report_path(current_user)) %></span>
+      <% end %>
+      <span><%= link_to('Login', new_user_session_path) %></span>
+      <span><%= link_to('Sign Up', new_user_registration_path, :method => :delete) %></span>
+      <span><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></span>
+      <span><%= link_to('Hello World', hello_world_path) %></span>
+    </ul>
+</nav>

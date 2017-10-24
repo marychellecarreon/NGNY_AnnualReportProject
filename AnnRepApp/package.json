@@ -1,0 +1,10 @@
+{
+  "name": "ann_rep_app",
+  "private": true,
+  "dependencies": {
+    "react-color": "^2.13.0"
+  },
+  "scripts": {
+    "postinstall": "cd client && yarn install"
+  }
+}
